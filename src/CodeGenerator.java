@@ -16,6 +16,7 @@ public class CodeGenerator
 		createpw.generateRandomCode(length);
 		System.out.print("generated from: ");
 		System.out.println(System.getProperty("user.name")+" on " +System.getProperty("os.name"));
+		GUIGen guigen= new GUIGen();
 	}
 
 }

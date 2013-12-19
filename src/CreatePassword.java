@@ -5,14 +5,16 @@ import java.util.Calendar;
 import java.util.Random;
 
 
-public class CreatePassword
+public class CreatePassword 
 {
 
 	public void generateRandomCode(int length){
 	int i = 1;
+
 	char[] chars = "abcdefghijklmnopqrstuvwxyz2131994".toCharArray();
 	StringBuilder stringbuilder = new StringBuilder();
 	Random random = new Random();
+
 	while(i<=length){
 	    char c = chars[random.nextInt(chars.length)];
 	    stringbuilder.append(c);
